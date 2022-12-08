@@ -12,7 +12,7 @@ export default function Card({ data }: { data: HomePageVideos }) {
         <Link to={`/watch/${data.videoId}`}>
           <img
             src={data.videoThumbnail}
-            className="h-44 w-72"
+            className="h-44 w-72 rounded-lg"
             alt="thumbnail"
           />
         </Link>
@@ -43,7 +43,7 @@ export default function Card({ data }: { data: HomePageVideos }) {
               <span className="after:content-['•'] after:mx-1">
                 {data.videoViews} views
               </span>
-              <span>{data.videoAge}</span>
+              <span>{data.videoAge} ago</span>
             </div>
           </div>
         </div>
